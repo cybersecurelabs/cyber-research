@@ -26,13 +26,15 @@ In the latest version of Powershell Empire a server and a client is condigured.
 
 To start the server, the command is: 
 
+```
 sudo powershell-empire server
-
+```
 
 To Start the Client, the command is: 
 
+```
 sudo powershell-empire client
-
+```
 
 
 
