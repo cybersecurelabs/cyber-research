@@ -22,19 +22,31 @@ Linux & macOS: Exploitation requires Python 2.6 or 2.7
 
 
 
-In the latest version of Powershell Empire a server and a client is condigured.
+In the latest version of Powershell Empire comes with a cleint-server model.
 
-To start the server, the command is: 
+To start the server, the command is below: 
 
 ```
 sudo powershell-empire server
 ```
 
-To start the client, the command is: 
+To start the client, the command is below: 
 
 ```
 sudo powershell-empire client
 ```
+
+After starting both the client an server, the methodology used to carry out an attack are as follows:
+
+1. Start a Listener 
+2. Start a Stager
+3. Listing the Agents
+4. Interact with the agents
+5. Run Post Exploitation commands
+
+
+
+7. 
 
 
 
