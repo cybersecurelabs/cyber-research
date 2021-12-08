@@ -78,4 +78,8 @@ execute
 agents
 ```
 
+### Interacting with an agent
 
+```
+interact S2PRDACB
+```
