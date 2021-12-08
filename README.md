@@ -100,3 +100,9 @@ usemodule powershell/privesc/bypassuac_env
 ```
 Set Listener to http, since we are using a http listener, and Agent to the agent from the victim machine.
 
+use the info command to see what options are needed to be set.
+
+```
+info
+```
+
