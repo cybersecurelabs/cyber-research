@@ -21,3 +21,20 @@ Windows Platform: Exploitation and post exploits are performed using Powershell.
 Linux & macOS: Exploitation requires Python 2.6 or 2.7
 
 
+
+In the latest version of Powershell Empire a server and a client is condigured.
+
+To start the server, the command is: 
+
+sudo powershell-empire server
+
+
+To Start the Client, the command is: 
+
+sudo powershell-empire client
+
+
+
+
+
+
