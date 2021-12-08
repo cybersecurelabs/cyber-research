@@ -30,7 +30,7 @@ To start the server, the command is:
 sudo powershell-empire server
 ```
 
-To Start the Client, the command is: 
+To start the client, the command is: 
 
 ```
 sudo powershell-empire client
