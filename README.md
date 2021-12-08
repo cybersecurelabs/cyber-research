@@ -46,9 +46,4 @@ After starting both the client an server, the methodology used to carry out an a
 
 
 
-7. 
-
-
-
-
 
