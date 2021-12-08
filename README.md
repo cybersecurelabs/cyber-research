@@ -14,7 +14,9 @@ Empire is a “PowerShell and Python post-exploitation agent” with a heavy foc
 
 exploitation and post-exploitation of Active Directory (AD) deployments.
 
+
 Windows Platform: Exploitation and post exploits are performed using Powershell.
+
 
 Linux & macOS: Exploitation requires Python 2.6 or 2.7
 
