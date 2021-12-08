@@ -91,7 +91,7 @@ info
 ```
 
 
-####Elevating Privileges and Extracting Password Hashes
+#### Elevating Privileges and Extracting Password Hashes
 
 To do this, type the following command: 
 
