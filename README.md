@@ -83,3 +83,9 @@ agents
 ```
 interact S2PRDACB
 ```
+
+### Post Exploitation Commands:
+
+```
+info
+```
