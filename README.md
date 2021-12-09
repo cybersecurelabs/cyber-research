@@ -23,7 +23,7 @@ sudo powershell-empire server
 
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled.png)
+![Untitled](./Untitled.png)
 
 To start the client, the command is below:
 
