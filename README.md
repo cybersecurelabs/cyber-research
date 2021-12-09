@@ -1,6 +1,5 @@
 # Welcome to Cyber Secure Labs
 
-<a href="./">Home</a>   <a href="../filetransfer.md">File Transfers Techniques</a>
 
 ## Working with the newest version of Powershell Empire
 
