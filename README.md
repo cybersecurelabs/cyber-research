@@ -32,7 +32,7 @@ sudo powershell-empire client
 
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%201.png)
+![Untitled](./Untitled%201.png)
 
 After starting both the client an server, the methodology used to carry out an attack are as follows:
 
@@ -57,7 +57,7 @@ execute
 
 ```
 
-![Untitled](Welcome%20to%20Cyber%20Secure%20Labs%208e32e2f1837b4723ae8a7c2391aa51ce/Untitled%202.png)
+![Untitled](./Untitled%202.png)
 
 ### Setting up a stager:
 
