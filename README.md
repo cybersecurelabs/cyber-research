@@ -8,7 +8,4 @@ Public Site for sharing security writes
 Write-up by: Cybersec
 
 
-
-
-
-### [./README_md](#Place-2)<span id="place1">Working with Powershell Empire - Post Exploitation - Pub Date 09/12/2021</span>
+[Working with Powershell Empire - Post Exploitation - Pub Date 09/12/2021](./README_.md)
