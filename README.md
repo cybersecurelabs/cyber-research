@@ -8,11 +8,13 @@ Write-up by: Cybersec
 
 [Working with Powershell Empire - Post Exploitation - Pub Date 09/12/2021](./README_.md)
 
-## Active Directory LAB: Offensive Security
+## Active Directory LAB: Setup
 [Active Directory Vulnerable LAB Setup - MSSQL Setup - Pub Date 02/11/2022](./Active_Directory_LAB_MSSQL.md)
 
-
 ## Active Directory LAB: ATTACKS
-[Active Directory LAB Offensive - Passing-the-Hash - Pub Date 02/11/2022](./ActiveDirectory/pthlab/LAB/Active%20Directory%20LAB%20-%20Passing%20the%20hash%20-%20v04%20bc76fa23a2294ad68108a617ea36d3af.html)
+[Active Directory LAB Offensive - Passing-the-Hash - Pub Date 02/11/2022](./Active_Directory_LAB_Passing_the_hash.md)
 
+
+## Active Directory LAB: Enumeration
+[Active Directory LAB Offensive - Enumerating AD via MSSQL with Metasploit - Pub Date 02/11/2022](./Active_Directory_LAB_Passing_the_hash.md)
 
