@@ -9,7 +9,7 @@ Write-up by: Cybersec
 [Working with Powershell Empire - Post Exploitation - Pub Date 09/12/2021](./README_.md)
 
 ## Active Directory LAB: Offensive Security
-[Active Directory Vulnerable LAB Setup - MSSQL Setup - Pub Date 02/11/2022](./ActiveDirectory/mssqllab/LabSetup/LABsetup/Active%20Directory%20LAB%20-%20MSSQL%20Setup%20c491bef311d24ccea172c4c9e33a7722.html)
+[Active Directory Vulnerable LAB Setup - MSSQL Setup - Pub Date 02/11/2022](./Active_Directory_LAB_MSSQL.md)
 
 
 ## Active Directory LAB: ATTACKS
