@@ -16,5 +16,6 @@ Write-up by: Cybersec
 
 
 ## Active Directory LAB: Enumeration
+[Active Directory LAB Offensive - Enumerating AD with ADPease.ps1 - Pub Date 02/11/2022](./EnumadPEAS.md)
 [Active Directory LAB Offensive - Enumerating AD via MSSQL with Metasploit - Pub Date 02/11/2022](./msploit_enumsql.md)
 
