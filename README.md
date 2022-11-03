@@ -12,6 +12,7 @@ Write-up by: Cybersec
 [Active Directory Vulnerable LAB Setup - MSSQL Setup - Pub Date 02/11/2022](./Active_Directory_LAB_MSSQL.md)
 
 ## Active Directory LAB: ATTACKS
+[Active Directory LAB Offensive - Print Nightmare - Pub Date 02/05/2022](./PrintNightmare.md)
 [Active Directory LAB Offensive - Passing-the-Hash - Pub Date 02/11/2022](./Active_Directory_LAB_Passing_the_hash.md)
 
 
