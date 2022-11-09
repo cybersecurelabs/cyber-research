@@ -12,13 +12,13 @@ Write-up by: Cybersec
 [Active Directory Vulnerable LAB Setup - MSSQL Setup - Pub Date 02/11/2022](./Active_Directory_LAB_MSSQL.md)
 
 ## Active Directory LAB: ATTACKS
-[Active Directory LAB Offensive - Print Nightmare - Pub Date 02/05/2022](./PrintNightmare.md)\\
+[Active Directory LAB Offensive - Print Nightmare - Pub Date 02/05/2022](./PrintNightmare.md)\
 
 [Active Directory LAB Offensive - Passing-the-Hash - Pub Date 02/11/2022](./Active_Directory_LAB_Passing_the_hash.md)
 
 
 ## Active Directory LAB: Enumeration
-[Active Directory LAB Offensive - Enumerating AD with ADPease.ps1 - Pub Date 02/11/2022](./EnumadPEAS.md)\\
+[Active Directory LAB Offensive - Enumerating AD with ADPease.ps1 - Pub Date 02/11/2022](./EnumadPEAS.md)\
 
 [Active Directory LAB Offensive - Enumerating AD via MSSQL with Metasploit - Pub Date 02/11/2022](./msploit_enumsql.md)
 
