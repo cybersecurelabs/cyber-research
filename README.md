@@ -18,6 +18,8 @@ Write-up by: Cybersec
 
 [Active Directory LAB Offensive - Scheduled TASKS & HOAXSHELL - Pub Date 11/11/2022](./HOAXSHELL.md)
 
+[Active Directory LAB Offensive - PowerCat Reverse Shell Kali vs Windows Methods - Pub Date 15/11/2022](./Powercat.md)
+
 ## Active Directory LAB: Enumeration
 [Active Directory LAB Offensive - Enumerating AD with ADPease.ps1 - Pub Date 02/11/2022](./EnumadPEAS.md)
 
