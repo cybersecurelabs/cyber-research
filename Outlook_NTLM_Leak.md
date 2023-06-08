@@ -1,6 +1,6 @@
 Leak password hashes from a user by sending them an email by abusing CVE-2023-23397.
 
-![[./img/outlook_ntlm/New Project.png]]
+![](NewProject.png)
 
 
 By: CyberSec
