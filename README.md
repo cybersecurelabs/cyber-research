@@ -32,6 +32,7 @@ Write-up by: Cybersec
 
 ## Outlook NTLM Leak
 
-[Leak password hashes from a user by sending them an email by abusing CVE-2023-23397 - Pub Date 06/08/2023](./Outlook_NTLM_Leak)
+[Leak password hashes from a user by sending them an email by abusing CVE-2023-23397 - Pub Date 06/08/2023](./Outlook_NTLM_Leak.md)
+
 
 
