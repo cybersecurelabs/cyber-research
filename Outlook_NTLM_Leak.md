@@ -105,7 +105,7 @@ sudo responder -I tun0
 
 ```
 
-![]()./img/outlook_ntlm/Pasted%20image%2020230608134817.png)
+![](./img/outlook_ntlm/Pasted%20image%2020230608134817.png)
 
 
 We are now ready to trigger an authentication attempt via the Outlook vulnerability.
