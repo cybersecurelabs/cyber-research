@@ -134,7 +134,7 @@ Before installing the file, we will need to close OUTLOOK.
 ![](./img/outlook_ntlm/Pasted%20image%2020230608140019.png)
 
 
-![](./img/outlook_ntlm/Pasted image 20230608140054.png)
+![](./img/outlook_ntlm/Pasted%20image%2020230608140054.png)
 
 
 ![](./img/outlook_ntlm/%20image%2020230608140115.png)
